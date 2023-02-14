@@ -22,6 +22,6 @@
 21. The script rev
 22. The script cut -d ":" -f1,6 /etc/passwd | sort
 23. The script find . -empty | rev | cut -d '/' -f 1 | rev
-24. The script find -type f -name "*.git" | rev | cut -d "/" -f 1 | cut -d '.' 2- | rev | LC_ALL=C sort -f
+24. The script find . -type f -name "*.gif" | rev | cut -d '/' -f1 | cut -d '.' -f2,3 | rev | sort -Vf
 25. The script cut -c 1 | paste -s -d ''
 26. The script tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d ' ' -f -1 | rev
